@@ -1,0 +1,123 @@
+                            body {
+                                text-align: center;
+                                background-image: url("../images/tic-tac-toe-backgrounds-wallpapers.jpg");
+                                background-repeat: no-repeat;
+                            }
+                            
+                            .box {
+                                text-align: left;
+                                width: auto;
+                                height: auto;
+                            }
+                            
+                            h1 {
+                                position: relative;
+                                -webkit-animation: h1Animation 3s;
+                                font-family: 'Courier New';
+                            }
+                            
+                            #countContainer {
+                                position: absolute;
+                                left: 50%;
+                                top: 40%;
+                                margin-left: -500px;
+                                margin-top: -500px;
+                                height: 50px;
+                                width: 300px;
+                                font-size: 40px;
+                                margin-top: 40px;
+                                text-align: right;
+                                font-family: 'Courier New';
+                                font-weight: bold;
+                                /* visibility: hidden;*/
+                            }
+                            
+                            canvas {
+                                position: relative;
+                                /* background-color: #3FB8E8;*/
+                                /*-webkit-animation: canvasAnimation 5s;*/
+                            }
+                            
+                            .hide {
+                                visibility: hidden;
+                            }
+                            
+                            .game-board {
+                                visibility: visible;
+                            }
+                            /*.show {
+    visibility: visible;
+}*/
+                            
+                            .btn {
+                                margin: 0 0 1rem 0;
+                                border: 0;
+                                outline: none;
+                                border-radius: 0;
+                                padding: 15px 0;
+                                font-size: 2rem;
+                                font-weight: 600;
+                                text-transform: uppercase;
+                                letter-spacing: .1em;
+                                background: #1ab188;
+                                color: white;
+                                /*transition: all.5s ease;*/
+                                -webkit-appearance: none;
+                                padding: 0.5rem;
+                            }
+                            
+                            @-webkit-keyframes canvasAnimation {
+                                0% {
+                                    -webkit-transform: rotate(90deg);
+                                    left: 0px;
+                                    top: 0px;
+                                }
+                            }
+                            
+                            @-webkit-keyframes h1Animation {
+                                0% {
+                                    -webkit-transform: scale(0, 1.3)
+                                }
+                                25% {
+                                    -webkit-transform: scale(1.3, 1.6)
+                                }
+                                50% {
+                                    -webkit-transform: scale(1.6, 1.9)
+                                }
+                                75% {
+                                    -webkit-transform: scale(2.1, 2.4)
+                                }
+                                100% {
+                                    -webkit-transform: scale(2.4, 2.5)
+                                }
+                            }
+                            
+                            @-webkit-keyframes h2Animation {
+                                0% {
+                                    -webkit-transform: scale(1, 2);
+                                }
+                                25% {
+                                    -webkit-transform: scale(2, 3);
+                                }
+                                50% {
+                                    -webkit-transform: scale(3, 4);
+                                }
+                                75% {
+                                    -webkit-transform: scale(4, 5);
+                                }
+                                100% {
+                                    -webkit-transform: scale(0, 0);
+                                }
+                            }
+                            
+                            @-webkit-keyframes h3Animation {
+                                0% {
+                                    -webkit-transform: scale(0, 0);
+                                }
+                                50% {
+                                    -webkit-transform: scale(0, 0);
+                                }
+                                100% {
+                                    -webkit-transform: scale(5, 5);
+                                }
+                            }
